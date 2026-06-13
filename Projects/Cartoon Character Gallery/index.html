@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartoon Character Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="gallery-header">
+    <div class="header-brand">
+      <span class="brand-icon">◈</span>
+      <h1 class="brand-title">Cartoon Character Gallery</h1>
+      <span class="brand-badge">v1.0</span>
+    </div>
+    <div class="header-controls">
+      <div class="search-wrapper">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search characters by name or description..." autocomplete="off" spellcheck="false">
+        <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      </div>
+      <nav class="filter-chips" id="filterChips" aria-label="Universe filters">
+        <button class="chip active" data-universe="all">All Universes</button>
+        <button class="chip" data-universe="90s Nostalgia">90s Nostalgia</button>
+        <button class="chip" data-universe="Modern Anime">Modern Anime</button>
+        <button class="chip" data-universe="Sci-Fi Cartoons">Sci-Fi Cartoons</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="telemetry-bar" aria-label="Gallery statistics">
+    <div class="telemetry-item">
+      <span class="telemetry-label">DISPLAYED</span>
+      <span class="telemetry-value" id="displayedCount">0</span>
+    </div>
+    <div class="telemetry-divider" aria-hidden="true"></div>
+    <div class="telemetry-item">
+      <span class="telemetry-label">TOTAL</span>
+      <span class="telemetry-value" id="totalCount">0</span>
+    </div>
+    <div class="telemetry-divider" aria-hidden="true"></div>
+    <div class="telemetry-item">
+      <span class="telemetry-label">ACTIVE FILTER</span>
+      <span class="telemetry-value" id="activeFilter">All</span>
+    </div>
+  </section>
+
+  <main class="gallery-grid" id="galleryGrid" aria-label="Character cards">
+  </main>
+
+  <aside class="character-drawer" id="characterDrawer" aria-hidden="true">
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Character details">
+      <button class="drawer-close" id="drawerClose" aria-label="Close drawer">✕</button>
+      <div class="drawer-content" id="drawerContent"></div>
+    </div>
+  </aside>
+
+  <footer class="gallery-footer">
+    <p>Cartoon Character Gallery &copy; 2026 &mdash; Built with <span class="footer-heart">&hearts;</span> for Web-Dev-Projects</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

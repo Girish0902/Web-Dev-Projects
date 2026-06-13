@@ -1,0 +1,17 @@
+{
+  "title": "Cartoon Character Gallery",
+  "description": "A high-fidelity, interactive character showcase portal featuring 12 iconic cartoon characters across three universes (90s Nostalgia, Modern Anime, Sci-Fi Cartoons). Implements a real-time string-matching search filter matrix, categorical universe chip filters, perspective-depth glassmorphic card grid with spring-easing hover transforms, a detailed slide-in bio drawer with catchphrases and stats, and a live telemetry counter tracking displayed card tallies. Built entirely with vanilla HTML5, CSS3, and JavaScript ES6+ — no frameworks or external dependencies.",
+  "entry": "index.html",
+  "tags": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Filtering",
+    "Responsive",
+    "Dark-mode"
+  ],
+  "author": {
+    "name": "Girish Madarkar",
+    "github": "Girish922005"
+  }
+}
